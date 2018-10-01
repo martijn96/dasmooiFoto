@@ -12,6 +12,7 @@
         function index(){
             alert(document.getElementById('id').value);
             document.getElementById("id-form").value = document.getElementById('id').value;
+            document.getElementsById("Titel").value = document.getElementById('naam').value;
 
         }
             function del(){
@@ -23,6 +24,7 @@
     </script>
   <div class="row">
       <?php
+      error_reporting(E_ALL);
       $db = mysqli_connect("localhost", "root", "root", "progesh");
 
       $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Tafels'");
@@ -31,9 +33,9 @@
           echo "<div id='img_div' style='float: left;width: 200px;padding: 10px;display: inline-table;'>";
           echo "<img style='width: 200px' src='/dasmooiFoto".$row['image']."' >";
           echo"</br>";
-          echo "<p>Naam: ".$row['title']."</p>";
-          echo "<p>Beschr: ".$row['image_text']."</p>";
-          echo "<p>Showroom: ".$row['inShowroom']."</p>";
+          echo "<p id='naam'>Naam: ".$row['title']."</p>";
+          echo "<p id='text'>Beschr: ".$row['image_text']."</p>";
+          echo "<p id='showroom'>Showroom: ".$row['inShowroom']."</pid>";
           echo "<input type='hidden' id='id' name='id' value='". $row['id']."'></input>";
           echo"</br>";
           ?>
@@ -47,20 +49,9 @@
           echo "</div>";
       }
       ?>
-      <?php
-      $db = mysqli_connect("localhost", "root", "root", "progesh");
 
-      if (isset($_POST['submit'])) {
-          $image_text = mysqli_real_escape_string($db, $_POST['Beschrijving']);
-          $title = mysqli_real_escape_string($db, $_POST['Titel']);
-          $category = mysqli_real_escape_string($db, $_POST['Categorie']);
-          $inShowroom = mysqli_real_escape_string($db, $_POST['showroom']);
-          $id = mysqli_real_escape_string($db, $_POST['id-form']);
-          $sql = "UPDATE image_upload SET image_text =". $image_text . ", title=".$title.", category=".$category." inShowroom=".$inShowroom." WHERE id=".$id;
-          // execute query
-          mysqli_query($db, $sql);
-      }
-      ?>
+
+
       <!-- The Modal -->
 <div class="modal" id="edit">
   <div class="modal-dialog">
@@ -75,7 +66,7 @@
       <!-- Modal body -->
       <div class="modal-body">
 
-          <form class="form-horizontal" method="POST" action="/dasmooiFoto/home.php?action=Tafels" enctype="multipart/form-data">
+          <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
 
               <fieldset>
                   <!-- Text input-->
@@ -139,7 +130,6 @@
                       </div>
                   </div>
                   <!-- Button -->
-                  <input type="hidden" id='id-form' name='id-form'>
 
               </fieldset>
       </div>
@@ -148,6 +138,7 @@
       <div class="modal-footer">
           <div class="form-group">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+              <input type="hidden" id='id-form' name='id-form'>
               <button id="Opslaan" type="submit" name="upload" class="btn btn-success">Opslaan</button>
               </form>
 

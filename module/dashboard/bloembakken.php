@@ -1,163 +1,220 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
-  <h1>
-    Foto's - Bloembakken
-  </h1>
+    <h1>
+        Foto's - Tafels
+    </h1>
 </section>
 
 <!-- Main content -->
 <section class="content">
-  <!-- Small boxes (Stat box) -->
-  <div class="row">
-      <?php
-      $db = mysqli_connect("localhost", "root", "root", "progesh");
+    <!-- Small boxes (Stat box) -->
+    <script type="text/javascript">
+        function index(){
+            alert(document.getElementById('naam').value);
+            document.getElementById("id-form").value = document.getElementById('id').value;
+            document.getElementById("Titel").value = document.getElementById('naam').value;
+            var catResult;
+            switch(document.getElementById('cat').value) {
+                case "Kasten":
+                    document.getElementById("Categorie-0").value = checked;
+                    break;
+                case "Tafels":
+                    document.getElementById("Categorie-1").value = checked;
+                    catResult = "Categorie-1"
+                    break;
+                case "Tuinmeubelen":
+                    document.getElementById("Categorie-2").value = checked;
+                    catResult = "Categorie-2"
+                    break;
+                case "Bloembakken":
+                    document.getElementById("Categorie-3").value = checked;
+                    catResult = "Categorie-3"
+                    break;
+                case "Diversen":
+                    document.getElementById("Categorie-4").value = checked;
+                    catResult = "Categorie-4"
+                    break;
+                default:
+                    document.getElementById("Categorie-0").value = checked;
+                    catResult = "Categorie-0"
 
-      $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Bloembakken'");
-
-      while ($row = mysqli_fetch_array($result)) {
-          echo "<div id='img_div' style='float: left;width: 250px;padding: 10px;'>";
-          echo "<img style='width: 250px' src='/dasmooiFoto".$row['image']."' >";
-          echo "<p>Naam: ".$row['image_text']."</p>";
-          ?>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">
-              Aanpassen
-          </button>
-          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
-              Verwijderen
-          </button>
-          <?
-          echo "</div>";
-      }
-      ?>
-      <!-- The Modal -->
-<div class="modal" id="edit">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Foto aanpassen</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
+            }
 
 
-          <form class="form-horizontal" method="POST" action="home.php?action=dashAdd" enctype="multipart/form-data">
-
-              <fieldset>
-                  <!-- Text input-->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Titel">Titel</label>
-                      <div class="col-md-4">
-                          <input id="Titel" name="Titel" type="text" placeholder="Titel" class="form-control input-md" required="">
-                          <span class="help-block">Unieke beschrijving</span>
-                      </div>
-                  </div>
-                  <!-- Multiple Radios (inline) -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Categorie">Categorie</label>
-                      <div class="col-md-4">
-                          <label class="radio-inline" for="Categorie-0">
-                              <input type="radio" name="Categorie" id="Categorie" value="Kasten" checked="checked">
-                              Kasten
-                          </label>
-                          <label class="radio-inline" for="Categorie-1">
-                              <input type="radio" name="Categorie" id="Categorie" value="Tafels">
-                              Tafels
-                          </label>
-                          <label class="radio-inline" for="Categorie-2">
-                              <input type="radio" name="Categorie" id="Categorie" value="Tuinmeubelen">
-                              Tuinmeubelen
-                          </label>
-                          <label class="radio-inline" for="Categorie-3">
-                              <input type="radio" name="Categorie" id="Categorie" value="Bloembakken">
-                              Bloembakken
-                          </label>
-                          <label class="radio-inline" for="Categorie-4">
-                              <input type="radio" name="Categorie" id="Categorie" value="Diversen">
-                              Diversen
-                          </label>
-                      </div>
-                  </div>
-
-                  <!-- Textarea -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Beschrijving">Beschrijving</label>
-                      <div class="col-md-4">
-                          <textarea class="form-control" id="Beschrijving" name="Beschrijving" required=""></textarea>
-                      </div>
-                  </div>
-
-                  <!-- Multiple Radios -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="showroom">In showroom</label>
-                      <div class="col-md-4">
-                          <div class="radio">
-                              <label for="showroom-0">
-                                  <input type="radio" name="showroom" id="showroom-0" value="1" checked="checked" required="">
-                                  Ja
-                              </label>
-                          </div>
-                          <div class="radio">
-                              <label for="showroom-1">
-                                  <input type="radio" name="showroom" id="showroom-1" value="0">
-                                  Nee
-                              </label>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Button -->
-              </fieldset>
-          </form>
 
 
-      </div>
+            document.getElementById("Beschrijving").value = document.getElementById('text').value;
+//            if(document.getElementById("inShowroom").value == 1){ document.getElementById('showroom').value = };
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-          <div class="form-group">
-                  <button id="Opslaan" type="submit" name="upload" class="btn btn-success">Opslaan</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
 
-          </div>
-      </div>
+        }
+        function del(){
+            alert(document.getElementById('id').value);
+            alert(document.formName.elements['id'].value);
+            document.getElementById("id-form").value = document.getElementById('id').value;
+
+        }
+    </script>
+    <div class="row">
+        <?php
+        error_reporting(E_ALL);
+        $db = mysqli_connect("localhost", "root", "root", "progesh");
+
+        $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Bloembakken'");
+
+        while ($row = mysqli_fetch_array($result)) {
+            echo "<div id='img_div' style='float: left;width: 200px;padding: 10px;display: inline-table;'>";
+            echo "<img style='width: 200px' src='/dasmooiFoto".$row['image']."' >";
+            echo"</br>";
+            echo "<p>Naam: ".$row['title']."</p>";
+            echo "<p>Beschr: ".$row['image_text']."</p>";
+            echo "<p>Showroom: ".$row['inShowroom']."</p>";
+            echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+            echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+            echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+            echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+            echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+            ?>
+            <button style="float: left" type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit" onclick="index();">
+                Aanpassen
+            </button>
+            <button style="float:right;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" onclick="del();">
+                Verwijderen
+            </button>
+            <?
+            echo "</div>";
+        }
+        ?>
+
+
+
+        <!-- The Modal -->
+        <div class="modal" id="edit">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Foto aanpassen</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
+
+                            <fieldset>
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Titel">Titel</label>
+                                    <div class="col-md-4">
+                                        <input id="Titel" name="Titel" type="text" placeholder="Titel" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                                <!-- Multiple Radios (inline) -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Categorie">Categorie</label>
+                                    <div class="col-md-4">
+                                        <label class="radio-inline" for="Categorie-0">
+                                            <input type="radio" name="Categorie" id="Categorie" value="Kasten" checked="checked">
+                                            Kasten
+                                        </label>
+                                        <label class="radio-inline" for="Categorie-1">
+                                            <input type="radio" name="Categorie" id="Categorie" value="Tafels">
+                                            Tafels
+                                        </label>
+                                        <label class="radio-inline" for="Categorie-2">
+                                            <input type="radio" name="Categorie" id="Categorie" value="Tuinmeubelen">
+                                            Tuinmeubelen
+                                        </label>
+                                        <label class="radio-inline" for="Categorie-3">
+                                            <input type="radio" name="Categorie" id="Categorie" value="Bloembakken">
+                                            Bloembakken
+                                        </label>
+                                        <label class="radio-inline" for="Categorie-4">
+                                            <input type="radio" name="Categorie" id="Categorie" value="Diversen">
+                                            Diversen
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Beschrijving">Beschrijving</label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control" id="Beschrijving" name="Beschrijving" required=""></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Multiple Radios -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="showroom">In showroom</label>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label for="showroom-0">
+                                                <input type="radio" name="showroom" id="showroom-0" value="1" checked="checked" required="">
+                                                Ja
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="showroom-1">
+                                                <input type="radio" name="showroom" id="showroom-1" value="0">
+                                                Nee
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+
+                            </fieldset>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+                            <input type="hidden" id='id-form' name='id-form'>
+                            <button id="Opslaan" type="submit" name="upload" class="btn btn-success">Opslaan</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="delete">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Foto verwijderen</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Weet je zeker dat je deze foto wil verwijderen?
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button style="float: left" type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete()">Verwijderen</button>
+                        <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
-  </div>
-</div>
-
-
-      <!-- The Modal -->
-      <div class="modal" id="delete">
-          <div class="modal-dialog">
-              <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                      <h4 class="modal-title">Foto verwijderen</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                      Weet je zeker dat je deze foto wil verwijderen?
-                  </div>
-
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                      <button style="float: left" type="button" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>
-                      <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
-
-                  </div>
-
-              </div>
-          </div>
-      </div>
-
-  </div>
-  <!-- /.row -->
+    <!-- /.row -->
 </section>
 <!-- /.content -->
 

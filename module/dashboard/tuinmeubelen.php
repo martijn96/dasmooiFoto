@@ -30,103 +30,101 @@
       }
       ?>
       <!-- The Modal -->
-<div class="modal" id="edit">
-  <div class="modal-dialog">
-    <div class="modal-content">
+      <div class="modal" id="edit">
+          <div class="modal-dialog">
+              <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Foto aanpassen</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-
-
-          <form class="form-horizontal" method="POST" action="home.php?action=dashAdd" enctype="multipart/form-data">
-
-              <fieldset>
-                  <!-- Text input-->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Titel">Titel</label>
-                      <div class="col-md-4">
-                          <input id="Titel" name="Titel" type="text" placeholder="Titel" class="form-control input-md" required="">
-                          <span class="help-block">Unieke beschrijving</span>
-                      </div>
-                  </div>
-                  <!-- Multiple Radios (inline) -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Categorie">Categorie</label>
-                      <div class="col-md-4">
-                          <label class="radio-inline" for="Categorie-0">
-                              <input type="radio" name="Categorie" id="Categorie" value="Kasten" checked="checked">
-                              Kasten
-                          </label>
-                          <label class="radio-inline" for="Categorie-1">
-                              <input type="radio" name="Categorie" id="Categorie" value="Tafels">
-                              Tafels
-                          </label>
-                          <label class="radio-inline" for="Categorie-2">
-                              <input type="radio" name="Categorie" id="Categorie" value="Tuinmeubelen">
-                              Tuinmeubelen
-                          </label>
-                          <label class="radio-inline" for="Categorie-3">
-                              <input type="radio" name="Categorie" id="Categorie" value="Bloembakken">
-                              Bloembakken
-                          </label>
-                          <label class="radio-inline" for="Categorie-4">
-                              <input type="radio" name="Categorie" id="Categorie" value="Diversen">
-                              Diversen
-                          </label>
-                      </div>
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                      <h4 class="modal-title">Foto aanpassen</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
 
-                  <!-- Textarea -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="Beschrijving">Beschrijving</label>
-                      <div class="col-md-4">
-                          <textarea class="form-control" id="Beschrijving" name="Beschrijving" required=""></textarea>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                      <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
+
+                          <fieldset>
+                              <!-- Text input-->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="Titel">Titel</label>
+                                  <div class="col-md-4">
+                                      <input id="Titel" name="Titel" type="text" placeholder="Titel" class="form-control input-md" required="">
+                                  </div>
+                              </div>
+                              <!-- Multiple Radios (inline) -->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="Categorie">Categorie</label>
+                                  <div class="col-md-4">
+                                      <label class="radio-inline" for="Categorie-0">
+                                          <input type="radio" name="Categorie" id="Categorie" value="Kasten" checked="checked">
+                                          Kasten
+                                      </label>
+                                      <label class="radio-inline" for="Categorie-1">
+                                          <input type="radio" name="Categorie" id="Categorie" value="Tafels">
+                                          Tafels
+                                      </label>
+                                      <label class="radio-inline" for="Categorie-2">
+                                          <input type="radio" name="Categorie" id="Categorie" value="Tuinmeubelen">
+                                          Tuinmeubelen
+                                      </label>
+                                      <label class="radio-inline" for="Categorie-3">
+                                          <input type="radio" name="Categorie" id="Categorie" value="Bloembakken">
+                                          Bloembakken
+                                      </label>
+                                      <label class="radio-inline" for="Categorie-4">
+                                          <input type="radio" name="Categorie" id="Categorie" value="Diversen">
+                                          Diversen
+                                      </label>
+                                  </div>
+                              </div>
+
+                              <!-- Textarea -->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="Beschrijving">Beschrijving</label>
+                                  <div class="col-md-4">
+                                      <textarea class="form-control" id="Beschrijving" name="Beschrijving" required=""></textarea>
+                                  </div>
+                              </div>
+
+                              <!-- Multiple Radios -->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="showroom">In showroom</label>
+                                  <div class="col-md-4">
+                                      <div class="radio">
+                                          <label for="showroom-0">
+                                              <input type="radio" name="showroom" id="showroom-0" value="1" checked="checked" required="">
+                                              Ja
+                                          </label>
+                                      </div>
+                                      <div class="radio">
+                                          <label for="showroom-1">
+                                              <input type="radio" name="showroom" id="showroom-1" value="0">
+                                              Nee
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Button -->
+
+                          </fieldset>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                      <div class="form-group">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+                          <input type="hidden" id='id-form' name='id-form'>
+                          <button id="Opslaan" type="submit" name="upload" class="btn btn-success">Opslaan</button>
+                          </form>
+
                       </div>
                   </div>
 
-                  <!-- Multiple Radios -->
-                  <div class="form-group">
-                      <label class="col-md-4 control-label" for="showroom">In showroom</label>
-                      <div class="col-md-4">
-                          <div class="radio">
-                              <label for="showroom-0">
-                                  <input type="radio" name="showroom" id="showroom-0" value="1" checked="checked" required="">
-                                  Ja
-                              </label>
-                          </div>
-                          <div class="radio">
-                              <label for="showroom-1">
-                                  <input type="radio" name="showroom" id="showroom-1" value="0">
-                                  Nee
-                              </label>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Button -->
-              </fieldset>
-          </form>
-
-
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-          <div class="form-group">
-                  <button id="Opslaan" type="submit" name="upload" class="btn btn-success">Opslaan</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
-
+              </div>
           </div>
       </div>
-
-    </div>
-  </div>
-</div>
 
 
       <!-- The Modal -->

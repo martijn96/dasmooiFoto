@@ -12,11 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="780">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <marker date="1538401240547" expanded="true" signature="620:775" ph="UPDATE image... " />
                 <marker date="1538401240547" expanded="true" signature="1954:1988" ph="DELETE FROM " />
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/dashAdd.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
-              <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+              <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
               <folding>
                 <marker date="1538399739066" expanded="true" signature="1867:2011" ph="INSERT INTO image_upload... " />
               </folding>
@@ -40,11 +40,29 @@
       <file leaf-file-name="tafels.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="33" column="67" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="67" />
+            <state relative-caret-position="457">
+              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
               <folding>
                 <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
                 <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="580" column="96" lean-forward="true" selection-start-line="580" selection-start-column="96" selection-end-line="580" selection-end-column="96" />
+              <folding>
+                <marker date="1538402924999" expanded="true" signature="13862:13895" ph="..." />
+                <marker date="1538402924999" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
+                <marker date="1538402924999" expanded="true" signature="33873:33925" ph="SELECT * FRO... image_upload" />
+                <marker date="1538402924999" expanded="true" signature="49035:49093" ph="SELECT * FRO... image_upload" />
+                <marker date="1538402924999" expanded="true" signature="57605:57641" ph="..." />
+                <marker date="1538402924999" expanded="true" signature="58413:58470" ph="SELECT * FRO... image_upload" />
+                <marker date="1538402924999" expanded="true" signature="65480:65534" ph="SELECT * FRO... image_upload" />
               </folding>
             </state>
           </provider>
@@ -95,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/dist/css/AdminLTE.css" />
         <option value="$PROJECT_DIR$/module/dashboard/dashboard.php" />
         <option value="$PROJECT_DIR$/home.php" />
@@ -110,6 +127,7 @@
         <option value="$PROJECT_DIR$/fotos/module/dashboard/dashAdd.php" />
         <option value="$PROJECT_DIR$/fotos/module/dashboard/tafels.php" />
         <option value="$PROJECT_DIR$/fotos/module/dashboard/controller.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -294,6 +312,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fotos/assets/img/projects/tafels" />
       <recent name="$PROJECT_DIR$/module/dashboard" />
     </key>
   </component>
@@ -390,12 +409,12 @@
       <updated>1536566172328</updated>
       <workItem from="1536566174406" duration="5836000" />
       <workItem from="1537026727036" duration="66000" />
-      <workItem from="1538233415273" duration="31453000" />
+      <workItem from="1538233415273" duration="33134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37355000" />
+    <option name="totallyTimeSpent" value="39036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="6" />
@@ -581,21 +600,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="67" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="67" />
-          <folding>
-            <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-            <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/dashAdd.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+          <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
           <folding>
             <marker date="1538399739066" expanded="true" signature="1867:2011" ph="INSERT INTO image_upload... " />
           </folding>
@@ -604,11 +612,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="780">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <marker date="1538401240547" expanded="true" signature="620:775" ph="UPDATE image... " />
             <marker date="1538401240547" expanded="true" signature="1954:1988" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
+            <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="580" column="96" lean-forward="true" selection-start-line="580" selection-start-column="96" selection-end-line="580" selection-end-column="96" />
+          <folding>
+            <marker date="1538402924999" expanded="true" signature="13862:13895" ph="..." />
+            <marker date="1538402924999" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
+            <marker date="1538402924999" expanded="true" signature="33873:33925" ph="SELECT * FRO... image_upload" />
+            <marker date="1538402924999" expanded="true" signature="49035:49093" ph="SELECT * FRO... image_upload" />
+            <marker date="1538402924999" expanded="true" signature="57605:57641" ph="..." />
+            <marker date="1538402924999" expanded="true" signature="58413:58470" ph="SELECT * FRO... image_upload" />
+            <marker date="1538402924999" expanded="true" signature="65480:65534" ph="SELECT * FRO... image_upload" />
           </folding>
         </state>
       </provider>

@@ -262,7 +262,7 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
             <!-- Projects -->            
             <div class="container padding-bottom padding-top-x2" id="meubels">
                 <div class="row">
-                               
+
                     <!-- Section General Title -->
                     <div class="general-title text-center">
                         <h2>Foto's</h2>
@@ -291,7 +291,31 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
 
                     <div id="grid-container" class="cbp-l-grid-masonry">
                         <ul>
-                        	<!-- Portfolio Item (image and description) -->
+                            <?php
+                            $db = mysqli_connect("localhost", "root", "root", "progesh");
+
+                            $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Kasten'");
+                            //                    print_r( $result);
+
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                echo'<li class="cbp-item kasten cbp-l-grid-masonry-height1">';
+                                echo "<a class='cbp-lightbox' data-title='' href='/dasmooiFoto/fotos". $row['image'] ."'>";
+                                echo "<div class='cbp-caption-defaultWrap'>";
+                                echo '<img src="/dasmooiFoto/fotos'.$row['image'] .'" alt="'.$row['title'].'">';
+                                echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+                                echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
+                                echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+                                echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+                                echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+                                echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+                                echo"</div>
+                                </a>
+                            </li>";
+
+                            }
+                            ?>
+                                <!-- Portfolio Item (image and description) -->
                             <li class="cbp-item kasten cbp-l-grid-masonry-height1">
                                 <a class="cbp-lightbox" data-title="" href="assets/img/projects/kasten/kast55.jpg">
                                     <div class="cbp-caption-defaultWrap">
@@ -540,7 +564,30 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
                                     </div>
                                 </a>
                             </li>
+                            <?php
+                            $db = mysqli_connect("localhost", "root", "root", "progesh");
 
+                            $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Tafels'");
+                            //                    print_r( $result);
+
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                echo'<li class="cbp-item tafels cbp-l-grid-masonry-height1">';
+                                echo "<a class='cbp-lightbox' data-title='' href='/dasmooiFoto/fotos". $row['image'] ."'>";
+                                echo "<div class='cbp-caption-defaultWrap'>";
+                                echo '<img src="/dasmooiFoto/fotos'.$row['image'] .'" alt="'.$row['title'].'">';
+                                echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+                                echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
+                                echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+                                echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+                                echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+                                echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+                                echo"</div>
+                                </a>
+                            </li>";
+
+                            }
+                            ?>
                               <!-- Portfolio Item (image and description) -->
                             <li class="cbp-item tafels cbp-l-grid-masonry-height1">
                                 <a class="cbp-lightbox" data-title="" href="assets/img/projects/tafels/tafel49.jpg">
@@ -739,7 +786,30 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
                                     </div>
                                 </a>
                             </li>
-                            
+                            <?php
+                            $db = mysqli_connect("localhost", "root", "root", "progesh");
+
+                            $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Tuinmeubelen'");
+                            //                    print_r( $result);
+
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                echo'<li class="cbp-item tuinmeubelen cbp-l-grid-masonry-height1">';
+                                echo "<a class='cbp-lightbox' data-title='' href='/dasmooiFoto/fotos". $row['image'] ."'>";
+                                echo "<div class='cbp-caption-defaultWrap'>";
+                                echo '<img src="/dasmooiFoto/fotos'.$row['image'] .'" alt="'.$row['title'].'">';
+                                echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+                                echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
+                                echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+                                echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+                                echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+                                echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+                                echo"</div>
+                                </a>
+                            </li>";
+
+                            }
+                            ?>
                                                         <!-- Portfolio Item (image and description) -->
                             <li class="cbp-item tuinmeubelen cbp-l-grid-masonry-height1">
                                 <a class="cbp-lightbox" data-title=" " href="assets/img/projects/tuinmeubelen/tuinmeubel1.jpg">
@@ -844,9 +914,32 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
                                     </div>
                                 </a>
                             </li>
-                            
+
                                                         <!-- Portfolio Item (image and description) --> -->
-                            
+                            <?php
+                            $db = mysqli_connect("localhost", "root", "root", "progesh");
+
+                            $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Bloembakken'");
+                            //                    print_r( $result);
+
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                echo'<li class="cbp-item bloembakken cbp-l-grid-masonry-height1">';
+                                echo "<a class='cbp-lightbox' data-title='' href='/dasmooiFoto/fotos". $row['image'] ."'>";
+                                echo "<div class='cbp-caption-defaultWrap'>";
+                                echo '<img src="/dasmooiFoto/fotos'.$row['image'] .'" alt="'.$row['title'].'">';
+                                echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+                                echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
+                                echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+                                echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+                                echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+                                echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+                                echo"</div>
+                                </a>
+                            </li>";
+
+                            }
+                            ?>
                             <li class="cbp-item bloembakken cbp-l-grid-masonry-height1">
                                 <a class="cbp-lightbox" data-title="" href="assets/img/projects/bloembakken/bloembak9.jpg">
                                     <div class="cbp-caption-defaultWrap">
@@ -921,6 +1014,30 @@ Wij bedenken continu nieuwe toepassingen maar ook uw eigen ideeën zijn altijd w
                                 </a>
                             </li>
                             <!-- Portfolio Item (image and description) -->
+                            <?php
+                            $db = mysqli_connect("localhost", "root", "root", "progesh");
+
+                            $result = mysqli_query($db, "SELECT * FROM image_upload where category = 'Diversen'");
+                            //                    print_r( $result);
+
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                echo'<li class="cbp-item diversen cbp-l-grid-masonry-height1">';
+                                echo "<a class='cbp-lightbox' data-title='' href='/dasmooiFoto/fotos". $row['image'] ."'>";
+                                echo "<div class='cbp-caption-defaultWrap'>";
+                                echo '<img src="/dasmooiFoto/fotos'.$row['image'] .'" alt="'.$row['title'].'">';
+                                echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+                                echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
+                                echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
+                                echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
+                                echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
+                                echo "<input type='hidden' id='showroom' name='showroom' value='". $row['inShowroom']."'>";
+                                echo"</div>
+                                </a>
+                            </li>";
+
+                            }
+                            ?>
                             <li class="cbp-item diversen cbp-l-grid-masonry-height1">
                                 <a class="cbp-lightbox" data-title="" href="assets/img/projects/diversen/divers66.jpg">
                                     <div class="cbp-caption-defaultWrap">

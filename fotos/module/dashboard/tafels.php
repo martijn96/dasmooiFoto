@@ -31,7 +31,7 @@
 
         while ($row = mysqli_fetch_array($result)) {
             echo "<div id='img_div' style='float: left;width: 200px;padding: 10px;display: inline-table;'>";
-            echo "<img style='width: 200px' src='/dasmooiFoto".$row['image']."' >";
+            echo "<img style='width: 200px' src='/dasmooiFoto/fotos".$row['image']."' >";
             echo"</br>";
             echo "<p>Naam: ".$row['title']."</p>";
             echo "<p>Beschr: ".$row['image_text']."</p>";
@@ -70,7 +70,7 @@
                     <!-- Modal body -->
                     <div class="modal-body">
 
-                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
+                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/fotos/module/dashboard/controller.php" enctype="multipart/form-data">
 
                             <fieldset>
                                 <!-- Text input-->
@@ -172,7 +172,7 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
+                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/fotos/module/dashboard/controller.php" enctype="multipart/form-data">
 
                         <input type='hidden' id='form-cat' name='form-cat'>
                             <input type='hidden' id='id-form-del' name='id-form-del'>

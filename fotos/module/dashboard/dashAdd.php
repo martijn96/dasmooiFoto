@@ -32,27 +32,27 @@
           // image file directory
           switch ($category){
               case "Kasten":
-                  $target = "/assets/img/projects/kasten/".basename($image);
+                  $target = "/fotos/assets/img/projects/kasten/".basename($image);
 
                   break;
               case "Tafels":
-                  $target = "/assets/img/projects/tafels/".basename($image);
+                  $target = "/fotos/assets/img/projects/tafels/".basename($image);
 
                   break;
               case "Tuinmeubelen":
-                  $target = "/assets/img/projects/tuinmeubelen/".basename($image);
+                  $target = "/fotos/assets/img/projects/tuinmeubelen/".basename($image);
 
                   break;
               case "Bloembakken":
-                  $target = "/assets/img/projects/bloembakken/".basename($image);
+                  $target = "/fotos/assets/img/projects/bloembakken/".basename($image);
 
                   break;
               case "Diversen":
-                  $target = "/assets/img/projects/diversen/".basename($image);
+                  $target = "/fotos/assets/img/projects/diversen/".basename($image);
 
                   break;
               default:
-                  $target = "switich";
+                  $target = "undefined";
                   break;
           }
 

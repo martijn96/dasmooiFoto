@@ -51,10 +51,11 @@
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding>
-                <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-                <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
+                <marker date="1538413759831" expanded="true" signature="2201:2253" ph="SELECT * FRO... image_upload" />
+                <marker date="1538413759831" expanded="true" signature="2354:2415" ph="..." />
+                <marker date="1538413759831" expanded="false" signature="10515:10526" ph="..." />
               </folding>
             </state>
           </provider>
@@ -134,10 +135,10 @@
         <option value="$PROJECT_DIR$/module/dashboard/tafels.php" />
         <option value="$PROJECT_DIR$/module/dashboard/controller.php" />
         <option value="$PROJECT_DIR$/fotos/module/dashboard/dashAdd.php" />
-        <option value="$PROJECT_DIR$/fotos/module/dashboard/tafels.php" />
         <option value="$PROJECT_DIR$/fotos/module/dashboard/controller.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/fotos/home.php" />
+        <option value="$PROJECT_DIR$/fotos/module/dashboard/tafels.php" />
       </list>
     </option>
   </component>
@@ -438,12 +439,12 @@
       <updated>1536566172328</updated>
       <workItem from="1536566174406" duration="5836000" />
       <workItem from="1537026727036" duration="66000" />
-      <workItem from="1538233415273" duration="33647000" />
+      <workItem from="1538233415273" duration="35004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39549000" />
+    <option name="totallyTimeSpent" value="40906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="23" width="1280" height="733" extended-state="0" />
@@ -676,10 +677,11 @@
     <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
-            <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-            <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
+            <marker date="1538413759831" expanded="true" signature="2201:2253" ph="SELECT * FRO... image_upload" />
+            <marker date="1538413759831" expanded="true" signature="2354:2415" ph="..." />
+            <marker date="1538413759831" expanded="false" signature="10515:10526" ph="..." />
           </folding>
         </state>
       </provider>

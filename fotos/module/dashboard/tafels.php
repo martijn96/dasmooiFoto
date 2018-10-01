@@ -19,6 +19,27 @@
             document.getElementById("form-cat").value = document.getElementById('cat').value;
             document.getElementById("form-image").value = document.getElementById('img').value;
 
+            // set the radio button with the given value as being checked
+// do nothing if there are no radio buttons
+// if the given value does not exist, all the radio buttons
+// are reset to unchecked
+            setCheckedValue(document.getElementsByName("Categorie"), document.getElementById('cat').value);
+            setCheckedValue(document.getElementsByName("showroom"), document.getElementById('showroom').value);
+            function setCheckedValue(radioObj, newValue) {
+                if(!radioObj)
+                    return;
+                var radioLength = radioObj.length;
+                if(radioLength == undefined) {
+                    radioObj.checked = (radioObj.value == newValue.toString());
+                    return;
+                }
+                for(var i = 0; i < radioLength; i++) {
+                    radioObj[i].checked = false;
+                    if(radioObj[i].value == newValue.toString()) {
+                        radioObj[i].checked = true;
+                    }
+                }
+            }
 
         }
     </script>
@@ -178,9 +199,9 @@
                             <input type='hidden' id='id-form-del' name='id-form-del'>
                             <input type='hidden' id='form-image' name='form-image'>
 
-                            <button id="Opslaan" type="submit" name="upload" class="btn btn-success">verw2</button>
+                            <button id="Opslaan" type="submit" name="upload" class="btn btn-danger">Verwijderen</button>
 
-                        <button style="float: left" type="submit" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>
+<!--                        <button style="float: left" type="submit" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>-->
                         <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
                         </form>
                     </div>

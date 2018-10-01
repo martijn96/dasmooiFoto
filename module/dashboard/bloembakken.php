@@ -10,39 +10,8 @@
     <!-- Small boxes (Stat box) -->
     <script type="text/javascript">
         function index(){
-            alert(document.getElementById('naam').value);
             document.getElementById("id-form").value = document.getElementById('id').value;
             document.getElementById("Titel").value = document.getElementById('naam').value;
-            var catResult;
-            switch(document.getElementById('cat').value) {
-                case "Kasten":
-                    document.getElementById("Categorie-0").value = checked;
-                    break;
-                case "Tafels":
-                    document.getElementById("Categorie-1").value = checked;
-                    catResult = "Categorie-1"
-                    break;
-                case "Tuinmeubelen":
-                    document.getElementById("Categorie-2").value = checked;
-                    catResult = "Categorie-2"
-                    break;
-                case "Bloembakken":
-                    document.getElementById("Categorie-3").value = checked;
-                    catResult = "Categorie-3"
-                    break;
-                case "Diversen":
-                    document.getElementById("Categorie-4").value = checked;
-                    catResult = "Categorie-4"
-                    break;
-                default:
-                    document.getElementById("Categorie-0").value = checked;
-                    catResult = "Categorie-0"
-
-            }
-
-
-
-
             document.getElementById("Beschrijving").value = document.getElementById('text').value;
 //            if(document.getElementById("inShowroom").value == 1){ document.getElementById('showroom').value = };
 

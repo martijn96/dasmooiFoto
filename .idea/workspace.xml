@@ -81,14 +81,14 @@
       <file leaf-file-name="tafels.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/dashboard/tafels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2053">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="305">
+              <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <marker date="1538397272716" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-                <marker date="1538397272716" expanded="true" signature="1312:1373" ph="..." />
+                <element signature="n#style#0;n#button#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <marker date="1538397554890" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
+                <marker date="1538397554890" expanded="true" signature="1312:1373" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,13 +113,13 @@
       <file leaf-file-name="controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/dashboard/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
+            <state relative-caret-position="376">
               <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
-                <marker date="1538397417909" expanded="true" signature="622:777" ph="UPDATE image... " />
-                <marker date="1538397417909" expanded="true" signature="1712:1746" ph="DELETE FROM " />
-                <marker date="1538397417909" expanded="true" signature="1723:1746" ph="UPDATE image... " />
+                <marker date="1538397654487" expanded="true" signature="620:775" ph="UPDATE image... " />
+                <marker date="1538397654487" expanded="true" signature="1712:1746" ph="DELETE FROM " />
+                <marker date="1538397654487" expanded="true" signature="1723:1746" ph="UPDATE image... " />
               </folding>
             </state>
           </provider>
@@ -430,12 +430,12 @@
       <updated>1536566172328</updated>
       <workItem from="1536566174406" duration="5836000" />
       <workItem from="1537026727036" duration="66000" />
-      <workItem from="1538233415273" duration="28384000" />
+      <workItem from="1538233415273" duration="28621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34286000" />
+    <option name="totallyTimeSpent" value="34523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="6" />
@@ -650,27 +650,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/dashboard/tafels.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2053">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="305">
+          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <marker date="1538397272716" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-            <marker date="1538397272716" expanded="true" signature="1312:1373" ph="..." />
+            <element signature="n#style#0;n#button#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <marker date="1538397554890" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
+            <marker date="1538397554890" expanded="true" signature="1312:1373" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/dashboard/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
+        <state relative-caret-position="376">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1538397417909" expanded="true" signature="622:777" ph="UPDATE image... " />
-            <marker date="1538397417909" expanded="true" signature="1712:1746" ph="DELETE FROM " />
-            <marker date="1538397417909" expanded="true" signature="1723:1746" ph="UPDATE image... " />
+            <marker date="1538397654487" expanded="true" signature="620:775" ph="UPDATE image... " />
+            <marker date="1538397654487" expanded="true" signature="1712:1746" ph="DELETE FROM " />
+            <marker date="1538397654487" expanded="true" signature="1723:1746" ph="UPDATE image... " />
           </folding>
         </state>
       </provider>

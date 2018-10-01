@@ -178,6 +178,8 @@
                             <input type='hidden' id='id-form-del' name='id-form-del'>
                             <input type='hidden' id='form-image' name='form-image'>
 
+                            <button id="Opslaan" type="submit" name="upload" class="btn btn-success">verw2</button>
+
                         <button style="float: left" type="submit" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>
                         <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
                         </form>

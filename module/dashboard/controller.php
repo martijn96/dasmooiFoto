@@ -6,7 +6,7 @@
  * Time: 23:49
  */
 
-      if (isset($_POST['id-form'])) {
+      if (isset($_POST['Titel'])) {
 //          var_dump($_POST);
           $db = mysqli_connect("localhost", "root", "root", "progesh");
           $image_text = mysqli_real_escape_string($db, $_POST['Beschrijving']);
@@ -26,7 +26,7 @@ echo"<script type=\"text/javascript\">location.href = 'dasmooiFoto/home.php?acti
       }
 
 if (isset($_POST['form-image'])) {
-    var_dump($_POST);
+//    var_dump($_POST);
     $db = mysqli_connect("localhost", "root", "root", "progesh");
     $id = mysqli_real_escape_string($db, $_POST['id-form-del']);
     $category = mysqli_real_escape_string($db, $_POST['form-cat']);

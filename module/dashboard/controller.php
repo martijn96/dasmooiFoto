@@ -25,12 +25,13 @@
 echo"<script type=\"text/javascript\">location.href = 'dasmooiFoto/home.php?action=".$category.";</script> ";
       }
 
-if (isset($_POST['id-form-del'])) {
+if (isset($_POST['form-image'])) {
     var_dump($_POST);
     $db = mysqli_connect("localhost", "root", "root", "progesh");
     $id = mysqli_real_escape_string($db, $_POST['id-form-del']);
     $category = mysqli_real_escape_string($db, $_POST['form-cat']);
-    $image = mysqli_real_escape_string($db, $_POST['form-cat']);
+    $image = mysqli_real_escape_string($db, $_POST['form-image']);
+    $image = ".".$image;
     $files = [];
     array_push($files, $image);
 

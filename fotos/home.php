@@ -156,7 +156,8 @@ confirm_logged_in();
               include("module/dashboard/dashAdd.php");
               break;
           default:
-              echo "Invalid Action"; 
+              include("module/dashboard/dashAdd.php");
+              break;
       }
     ?>
   </div>

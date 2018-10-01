@@ -25,6 +25,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fotos/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dashAdd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/dashAdd.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tafels.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tafels.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
                 <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
@@ -50,19 +60,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="580" column="96" lean-forward="true" selection-start-line="580" selection-start-column="96" selection-end-line="580" selection-end-column="96" />
+            <state relative-caret-position="585">
+              <caret line="301" column="29" lean-forward="false" selection-start-line="301" selection-start-column="29" selection-end-line="301" selection-end-column="29" />
               <folding>
-                <marker date="1538402924999" expanded="true" signature="13862:13895" ph="..." />
-                <marker date="1538402924999" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
-                <marker date="1538402924999" expanded="true" signature="33873:33925" ph="SELECT * FRO... image_upload" />
-                <marker date="1538402924999" expanded="true" signature="49035:49093" ph="SELECT * FRO... image_upload" />
-                <marker date="1538402924999" expanded="true" signature="57605:57641" ph="..." />
-                <marker date="1538402924999" expanded="true" signature="58413:58470" ph="SELECT * FRO... image_upload" />
-                <marker date="1538402924999" expanded="true" signature="65480:65534" ph="SELECT * FRO... image_upload" />
+                <marker date="1538403163256" expanded="true" signature="13862:13895" ph="..." />
+                <marker date="1538403163256" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
+                <marker date="1538403163256" expanded="true" signature="17026:17078" ph="SELECT * FRO... image_upload" />
+                <marker date="1538403163256" expanded="true" signature="18674:18732" ph="SELECT * FRO... image_upload" />
+                <marker date="1538403163256" expanded="true" signature="20334:20391" ph="SELECT * FRO... image_upload" />
+                <marker date="1538403163256" expanded="true" signature="21992:22046" ph="SELECT * FRO... image_upload" />
               </folding>
             </state>
           </provider>
@@ -128,6 +137,7 @@
         <option value="$PROJECT_DIR$/fotos/module/dashboard/tafels.php" />
         <option value="$PROJECT_DIR$/fotos/module/dashboard/controller.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/fotos/home.php" />
       </list>
     </option>
   </component>
@@ -139,6 +149,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="136" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="733" />
@@ -183,6 +194,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fotos" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dasmooiFoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dasmooiFoto" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fotos" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,15 +438,15 @@
       <updated>1536566172328</updated>
       <workItem from="1536566174406" duration="5836000" />
       <workItem from="1537026727036" duration="66000" />
-      <workItem from="1538233415273" duration="33134000" />
+      <workItem from="1538233415273" duration="33647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39036000" />
+    <option name="totallyTimeSpent" value="39549000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="733" extended-state="6" />
+    <frame x="136" y="23" width="1280" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,6 +639,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="301" column="29" lean-forward="false" selection-start-line="301" selection-start-column="29" selection-end-line="301" selection-end-column="29" />
+          <folding>
+            <marker date="1538403163256" expanded="true" signature="13862:13895" ph="..." />
+            <marker date="1538403163256" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
+            <marker date="1538403163256" expanded="true" signature="17026:17078" ph="SELECT * FRO... image_upload" />
+            <marker date="1538403163256" expanded="true" signature="18674:18732" ph="SELECT * FRO... image_upload" />
+            <marker date="1538403163256" expanded="true" signature="20334:20391" ph="SELECT * FRO... image_upload" />
+            <marker date="1538403163256" expanded="true" signature="21992:22046" ph="SELECT * FRO... image_upload" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -621,29 +665,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
+    <entry file="file://$PROJECT_DIR$/fotos/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
-            <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/tafels.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="580" column="96" lean-forward="true" selection-start-line="580" selection-start-column="96" selection-end-line="580" selection-end-column="96" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1538402924999" expanded="true" signature="13862:13895" ph="..." />
-            <marker date="1538402924999" expanded="true" signature="15378:15430" ph="SELECT * FRO... image_upload" />
-            <marker date="1538402924999" expanded="true" signature="33873:33925" ph="SELECT * FRO... image_upload" />
-            <marker date="1538402924999" expanded="true" signature="49035:49093" ph="SELECT * FRO... image_upload" />
-            <marker date="1538402924999" expanded="true" signature="57605:57641" ph="..." />
-            <marker date="1538402924999" expanded="true" signature="58413:58470" ph="SELECT * FRO... image_upload" />
-            <marker date="1538402924999" expanded="true" signature="65480:65534" ph="SELECT * FRO... image_upload" />
+            <marker date="1538400022923" expanded="true" signature="1159:1211" ph="SELECT * FRO... image_upload" />
+            <marker date="1538400022923" expanded="true" signature="1312:1373" ph="..." />
           </folding>
         </state>
       </provider>

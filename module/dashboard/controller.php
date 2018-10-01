@@ -25,11 +25,11 @@
 echo"<script type=\"text/javascript\">location.href = 'dasmooiFoto/home.php?action=".$category.";</script> ";
       }
 
-if (isset($_POST['confirmDelete'])) {
-//          var_dump($_POST);
+if (isset($_POST['id-form-del'])) {
+    var_dump($_POST);
     $db = mysqli_connect("localhost", "root", "root", "progesh");
-    $id = mysqli_real_escape_string($db, $_POST['id-form']);
-    $category = mysqli_real_escape_string($db, $_POST['category-form']);
+    $id = mysqli_real_escape_string($db, $_POST['id-form-del']);
+    $category = mysqli_real_escape_string($db, $_POST['form-cat']);
     $sql = "DELETE FROM image_upload WHERE id=" . $id ;
     // execute query
     mysqli_query($db, $sql);

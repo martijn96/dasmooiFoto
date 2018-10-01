@@ -11,16 +11,13 @@
     <script type="text/javascript">
         function index(){
             document.getElementById("id-form").value = document.getElementById('id').value;
+            document.getElementById("id-form-del").value = document.getElementById('id').value;
+
             document.getElementById("Titel").value = document.getElementById('naam').value;
             document.getElementById("Beschrijving").value = document.getElementById('text').value;
 //            if(document.getElementById("inShowroom").value == 1){ document.getElementById('showroom').value = };
+            document.getElementById("form-cat").value = document.getElementById('cat').value;
 
-
-        }
-        function del(){
-            alert(document.getElementById('id').value);
-            alert(document.formName.elements['id'].value);
-            document.getElementById("id-form").value = document.getElementById('id').value;
 
         }
     </script>
@@ -47,7 +44,7 @@
             <button style="float: left" type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit" onclick="index();">
                 Aanpassen
             </button>
-            <button style="float:right;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" onclick="del();">
+            <button style="float:right;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" onclick="index();">
                 Verwijderen
             </button>
             <?
@@ -173,9 +170,14 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button style="float: left" type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete()">Verwijderen</button>
-                        <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
+                        <form class="form-horizontal" method="POST" action="/dasmooiFoto/module/dashboard/controller.php" enctype="multipart/form-data">
 
+                        <input type='hidden' id='form-cat' name='form-cat'>
+                            <input type='hidden' id='id-form-del' name='id-form-del'>
+
+                        <button style="float: left" type="submit" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>
+                        <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
+                        </form>
                     </div>
 
                 </div>

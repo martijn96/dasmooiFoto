@@ -15,11 +15,11 @@
       <file leaf-file-name="controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+            <state relative-caret-position="428">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <marker date="1538401142774" expanded="true" signature="620:775" ph="UPDATE image... " />
-                <marker date="1538401142774" expanded="true" signature="1954:1988" ph="DELETE FROM " />
+                <marker date="1538401240547" expanded="true" signature="620:775" ph="UPDATE image... " />
+                <marker date="1538401240547" expanded="true" signature="1954:1988" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -390,12 +390,12 @@
       <updated>1536566172328</updated>
       <workItem from="1536566174406" duration="5836000" />
       <workItem from="1537026727036" duration="66000" />
-      <workItem from="1538233415273" duration="31356000" />
+      <workItem from="1538233415273" duration="31453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37258000" />
+    <option name="totallyTimeSpent" value="37355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="6" />
@@ -604,11 +604,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fotos/module/dashboard/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+        <state relative-caret-position="428">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <marker date="1538401142774" expanded="true" signature="620:775" ph="UPDATE image... " />
-            <marker date="1538401142774" expanded="true" signature="1954:1988" ph="DELETE FROM " />
+            <marker date="1538401240547" expanded="true" signature="620:775" ph="UPDATE image... " />
+            <marker date="1538401240547" expanded="true" signature="1954:1988" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

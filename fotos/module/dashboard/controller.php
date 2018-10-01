@@ -47,14 +47,14 @@ if (isset($_POST['form-image'])) {
         if (file_exists($file)) {
             unlink($file);
         } else {
-            print_r("file not deleted");
+//            print_r("file not deleted");
         }
 
 
-    //$sql = "DELETE FROM image_upload WHERE id=" . $id ;
-    // execute query
-    //mysqli_query($db, $sql);
-    //$error = mysqli_error($db);
+    $sql = "DELETE FROM image_upload WHERE id=" . $id ;
+//     execute query
+    mysqli_query($db, $sql);
+    $error = mysqli_error($db);
 
 //          echo ($error);
 //          header("Refresh:0");

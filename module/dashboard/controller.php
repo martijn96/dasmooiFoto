@@ -30,6 +30,19 @@ if (isset($_POST['id-form-del'])) {
     $db = mysqli_connect("localhost", "root", "root", "progesh");
     $id = mysqli_real_escape_string($db, $_POST['id-form-del']);
     $category = mysqli_real_escape_string($db, $_POST['form-cat']);
+    $image = mysqli_real_escape_string($db, $_POST['form-cat']);
+    $files = [];
+    array_push($files, $image);
+
+    foreach ($files as $file) {
+        if (file_exists($file)) {
+            unlink($file);
+        } else {
+            // File not found.
+        }
+    }
+
+
     $sql = "DELETE FROM image_upload WHERE id=" . $id ;
     // execute query
     mysqli_query($db, $sql);

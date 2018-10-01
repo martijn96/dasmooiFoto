@@ -17,6 +17,7 @@
             document.getElementById("Beschrijving").value = document.getElementById('text').value;
 //            if(document.getElementById("inShowroom").value == 1){ document.getElementById('showroom').value = };
             document.getElementById("form-cat").value = document.getElementById('cat').value;
+            document.getElementById("form-image").value = document.getElementById('img').value;
 
 
         }
@@ -36,6 +37,7 @@
             echo "<p>Beschr: ".$row['image_text']."</p>";
             echo "<p>Showroom: ".$row['inShowroom']."</p>";
             echo "<input type='hidden' id='id' name='id' value='". $row['id']."'>";
+            echo "<input type='hidden' id='img' name='img' value='". $row['image']."'>";
             echo "<input type='hidden' id='naam' name='naam' value='". $row['title']."'>";
             echo "<input type='hidden' id='text' name='text' value='". $row['image_text']."'>";
             echo "<input type='hidden' id='cat' name='cat' value='". $row['category']."'>";
@@ -174,6 +176,7 @@
 
                         <input type='hidden' id='form-cat' name='form-cat'>
                             <input type='hidden' id='id-form-del' name='id-form-del'>
+                            <input type='hidden' id='form-image' name='form-image'>
 
                         <button style="float: left" type="submit" class="btn btn-danger" data-dismiss="modal">Verwijderen</button>
                         <button style="float: right;" type="button" class="btn btn-primary" data-dismiss="modal">Annuleren</button>
